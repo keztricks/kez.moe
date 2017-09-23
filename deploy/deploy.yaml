@@ -1,0 +1,11 @@
+---
+- hosts: all
+  remote_user: ubuntu
+  roles:
+    - deploy-setup
+    - deploy-lock
+    - deploy-git
+    # - deploy-composer
+    #- deploy-gulp
+    - deploy-rsync
+    - deploy-unlock
