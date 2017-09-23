@@ -1,0 +1,34 @@
+---
+- hosts: all
+  gather_facts: False
+  vars:
+    users:
+      - username: kieranp
+        userset: admin
+        group: users
+        groups: wheel
+        password: "$6$bpIWAckAgs$28IidxCyuDvAWXJQuL0YxihxhP0qloD8xiVEDc3lxPO9lPP7XE9B5lngBJ.fNFh6ljM0QcLZtaugO8sgimUXZ."
+        update_password: always
+        state: present
+        admin_state: present
+
+  sudo: yes
+  pre_tasks:
+    - name: Create groups
+      group: name={{item}} state=present
+      with_items:
+        - users
+        - wheel
+    - name: Add wheel to sudoers
+      lineinfile: dest=/etc/sudoers state=present regexp="^(#\s+)?%wheel\s+ALL=\(ALL\)\s+ALL$" line="%wheel  ALL=(ALL)  ALL" insertbefore="^#include" validate='visudo -cf %s'
+  roles:
+    - role: user
+      user_sets: "{{host_user_sets}}"
+    - role: deploybot
+      when: "{{host_has_deploybot}}"
+  tasks:
+    - name: Remove wheel NOPASSWD from sudoers
+      lineinfile: dest={{item}} state=absent regexp="^%wheel.*NOPASSWD" validate='visudo -cf %s'
+      with_items:
+        - /etc/sudoers
+        - /etc/sudoers.d/wheel

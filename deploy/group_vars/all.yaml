@@ -1,0 +1,10 @@
+---
+application: kez.moe
+vhost: "{{ application }}"
+repository: "git@github.com:keztricks/kez.moe"
+deployment_group: deployment
+ansible_ssh_user: ubuntu
+host_has_deploybot: true
+host_has_admins: true
+host_user_sets:
+  - "admin"
