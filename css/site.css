@@ -48,6 +48,7 @@ body {
 
  .copyright {
      height: 50px;
+     line-height: 50px;
  }
 
  .popup {
@@ -70,7 +71,7 @@ body {
     letter-spacing: -.1rem;
     -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */
     transition:  display 2s;
-    cursor: default;
+    cursor: default;\
 }
 .main-head-small {
     font-size: 1.8rem;
@@ -99,6 +100,9 @@ body {
 }
 .col-oran {
     background-color: #ff9900;
+    color: #fff;
+}
+.white-link {
     color: #fff;
 }
 /* Extras */
