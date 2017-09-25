@@ -6,9 +6,44 @@
         <link rel="stylesheet" href="/css/skeleton.css">
         <link rel="stylesheet" href="/css/site.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="/js/scroll-mast.js" charset="utf-8"></script>
+        <script src="/js/popup.js" charset="utf-8"></script>
         <meta name="viewport" content="width=device-width" />
     </head>
     <body>
+
+        <!-- Popup -->
+        <div class="popup hidden col-white">
+            <div class="container centre-wrap">
+                <div class="centre">
+                    <span class="main-head-large">moe</span><span  class="u-pull-right" id="close-popup"><a href="#">close</a></span>
+                    <p>(in Japanese: “萌え”; pronounced as “moh-ay”) is a particular type of cute, something can be moe, you can feel moe, and you can feel moe towards someone, or something!</p>
+
+                    <img src="/img/moe.gif" alt="Anime Girl"></br>
+                    <span class="main-head-small">moe &#10004;</span></br>
+                    <img src="/img/not-moe.gif" alt="Moe Syslak"></br>
+                    <span class="main-head-small">not moe &#10006;</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Popup -->
+
+        <!-- Masthead -->
+        <div class="u-full-width">
+            <div class="masthead col-char">
+                <div class="container-wide">
+                    <h1 id="main-head" class="main-head-large">kez.<span id="trigger-popup"><span class="hov-red">m</span><span class="hov-blue">o</span><span class="hov-yel">e</span></span></h1>
+                </div>
+            </div>
+            <div id="mast" class='col-char'>
+                <div class="container-wide">
+                    <span id="sec-head" class="main-head-small hidden">kez.<span class="hov-red">m</span><span class="hov-blue">o</span><span class="hov-yel">e</span></span>
+                </div>
+            </div>
+        </div>
+        <!-- End Mastehead -->
+
 
 
     </body>
