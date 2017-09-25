@@ -38,6 +38,13 @@ body {
     height: 60px;
  }
 
+ .main-content {
+     padding-top: 50px;
+ }
+
+ .project-thumb {
+     max-width: 100
+ }
 
  .popup {
     top: 0px;
