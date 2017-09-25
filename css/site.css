@@ -43,7 +43,11 @@ body {
  }
 
  .project-thumb {
-     max-width: 100
+     max-width: 90%;
+ }
+
+ .copyright {
+     height: 50px;
  }
 
  .popup {
