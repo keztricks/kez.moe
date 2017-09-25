@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+body {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.masthead {
+    height: 50px;
+    overflow: hidden;
+    padding: 150px 0px 0px 0px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media screen and (min-width: 550px) {
+    .masthead {
+        height: 50px;
+        padding: 100px 0px 0px 0px;
+    }
+}
+
+.masthead-fixed {
+    top: 0;
+    z-index: 100;
+   position: fixed;
+    width: 100%;
+}
+
+ #mast {
+	border: 0;
+	border-radius: 0px;
+	margin-bottom: 0;
+    height: 60px;
+ }
+
+ .main-content {
+     padding-top: 50px;
+ }
+
+.project-thumb {
+    margin-bottom: 2rem;
+}
+ .project-thumb {
+     max-width: 100%;
+ }
+
+ .popup {
+    top: 0px;
+     width: 100%;
+     height: 100%;
+     position: fixed;
+     z-index: 101;
+ }
+
+ .popup img {
+     max-width: 90%
+ }
+
+/* Text */
+
+.main-head-large {
+    font-size: 5.0rem;
+    line-height: 1.2;
+    letter-spacing: -.1rem;
+    -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */
+    transition:  display 2s;
+    cursor: default;
+}
+.main-head-small {
+    font-size: 1.8rem;
+    line-height: 60px;
+    letter-spacing: -.05rem;
+    cursor: default;
+}
+.hov-red:hover{
+    color: #fc8f8f;
+}
+.hov-blue:hover{
+    color: #8f96fc;
+}
+.hov-yel:hover{
+    color: #fcfc8f;
+}
+
+/* Colours */
+.col-char {
+    background-color: #333333;
+    color: #fff;
+}
+.col-white{
+    background-color: #fff;
+    color: #333333;
+}
+.col-oran {
+    background-color: #ff9900;
+    color: #fff;
+}
+/* Extras */
+.shadow {
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+}
+.hidden {
+    display: none;
+}
+.centre-wrap {
+    /*position: relative;
+    height: 100%;*/
+}
+.centre {
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+}
+/* Only Centre on Dektop (when the screen is tall enough for my content)*/
+@media screen and (min-width: 480px) and (min-height: 380px) {
+    .centre-wrap {
+        position: relative;
+        height: 100%;
+    }
+    .centre {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
