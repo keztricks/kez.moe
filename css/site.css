@@ -46,6 +46,14 @@ body {
      max-width: 90%;
  }
 
+.project {
+    margin-bottom: 20px;
+}
+
+/* .project p:last-of-type{
+    margin: 0;
+} */
+
  .copyright {
      height: 50px;
      line-height: 50px;
@@ -65,19 +73,25 @@ body {
 
 /* Text */
 
+a {
+    cursor: pointer;
+}
 .main-head-large {
     font-size: 5.0rem;
     line-height: 1.2;
     letter-spacing: -.1rem;
     -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */
     transition:  display 2s;
-    cursor: default;\
+    cursor: default;
 }
 .main-head-small {
     font-size: 1.8rem;
     line-height: 60px;
     letter-spacing: -.05rem;
     cursor: default;
+}
+.text-center {
+    text-align: center;
 }
 .hov-red:hover{
     color: #fc8f8f;
@@ -88,6 +102,12 @@ body {
 .hov-yel:hover{
     color: #fcfc8f;
 }
+.cta { 
+    font-size: 3.0rem;
+    line-height: 1.3; 
+    letter-spacing: -.1rem;
+}
+
 
 /* Colours */
 .col-char {
@@ -104,6 +124,15 @@ body {
 }
 .white-link {
     color: #fff;
+}
+
+/* Layout */
+hr.profile-divide{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    border-top: 1px solid #9e9e9e;
 }
 /* Extras */
 .shadow {
@@ -122,6 +151,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);*/
 }
+
 /* Only Centre on Dektop (when the screen is tall enough for my content)*/
 @media screen and (min-width: 480px) and (min-height: 380px) {
     .centre-wrap {
