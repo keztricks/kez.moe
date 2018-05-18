@@ -2,7 +2,8 @@
 $(document).ready(function() {
 
     $("#trigger-popup").click(function() {
-        $(".popup").removeClass('hidden');
+        var popupId = $(this).data("popup-trigger");
+        $("[data-popup='" + popupId +"']").removeClass('hidden');
     });
     $("#close-popup").click(function() {
         $(".popup").addClass('hidden');
