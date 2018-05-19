@@ -141,6 +141,9 @@ hr.profile-divide{
 .hidden {
     display: none;
 }
+.align-right {
+    text-align: right;
+}
 .centre-wrap {
     /*position: relative;
     height: 100%;*/
