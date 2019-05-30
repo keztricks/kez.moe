@@ -67,9 +67,17 @@ body {
     z-index: 101;
  }
 
- .popup-content {
-     width: 480px;
- }
+.popup-content {
+    width: 100%;
+}
+
+/* Only Centre on Dektop (when the screen is tall enough for my content)*/
+@media screen and (min-width: 550px) {
+    .popup-content {
+        width: 480px;
+    }
+}
+
  .popup img {
      max-width: 90%
  }
@@ -159,7 +167,7 @@ hr.profile-divide{
 }
 
 /* Only Centre on Dektop (when the screen is tall enough for my content)*/
-@media screen and (min-width: 480px) and (min-height: 380px) {
+@media screen and (min-width: 550px) and (min-height: 380px) {
     .centre-wrap {
         position: relative;
         height: 100%;
@@ -169,5 +177,23 @@ hr.profile-divide{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+
+.mobile {
+    display: inline-block;
+}
+
+.desktop {
+    display: none !important;
+}
+/* Only Centre on Dektop (when the screen is tall enough for my content)*/
+@media screen and (min-width: 550px) {
+    .mobile {
+        display: none !important;
+    }
+
+    .desktop {
+        display: inline-block !important;
     }
 }
