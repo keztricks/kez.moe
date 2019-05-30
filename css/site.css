@@ -61,12 +61,15 @@ body {
 
  .popup {
     top: 0px;
-     width: 100%;
-     height: 100%;
-     position: fixed;
-     z-index: 101;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 101;
  }
 
+ .popup-content {
+     width: 480px;
+ }
  .popup img {
      max-width: 90%
  }
